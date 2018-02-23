@@ -5,8 +5,9 @@ ops = {
         '+': operator.add,
         '-': operator.sub,
         '*': operator.mul,
-        '/': operator.floordiv
-        }
+        '/': operator.floordiv,
+        '^': operator.pow
+}
 
 def eval_arg(tokens, stack):
     for token in tokens:
