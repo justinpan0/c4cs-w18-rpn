@@ -282,7 +282,6 @@ class Coveralls(object):
                         'coveralls inside a git repository?', exc_info=ex)
             return {}
 
-
         return {
             'git': {
                 'head': {

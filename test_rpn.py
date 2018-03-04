@@ -1,6 +1,7 @@
 import unittest
 import rpn
 
+
 class TestBasics(unittest.TestCase):
     def test_add(self):
         result = rpn.calculate("1 1 +")
@@ -21,4 +22,3 @@ class TestBasics(unittest.TestCase):
     def test_exp(self):
         result = rpn.calculate("6 2 ^")
         self.assertEqual(36, result)
-
