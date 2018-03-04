@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import operator
-
+import readline
+import fileinput
 ops = {
         '+': operator.add,
         '-': operator.sub,
@@ -32,8 +33,11 @@ def calculate(arg):
         return eval_arg(arg.split(), stack)
 
 def main():
+    for line in fileinput.input():
+        print(calculate(line))
+
     while True:
-        calculate(input("rpn calc> "))
+        print(calculate(input("rpn calc> ")))
 
 if __name__ == '__main__':
     main()
