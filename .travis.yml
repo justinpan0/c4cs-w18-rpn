@@ -7,7 +7,7 @@ install:
   - python setup.py develop
 
 script: 
-  make test
-  py.test test_rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - make test
+  - py.test test_rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 after_success:
   - coveralls
