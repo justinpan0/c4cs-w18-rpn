@@ -4,8 +4,10 @@ python:
 
 install:
   - pip install -U pip
+  - pip install pytest-pep8
+  - pip install pytest-cov
   - python setup.py develop
-
+  
 script: 
   - make test
   - py.test test_rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
