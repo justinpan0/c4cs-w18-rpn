@@ -15,7 +15,7 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate("4 2 *")
         self.assertEqual(8, result)
 
-    #def test_div(self):
+    # def test_div(self):
     #    result = rpn.calculate("6 2 /")
     #    self.assertEqual(3, result)
 
